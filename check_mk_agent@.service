@@ -1,0 +1,8 @@
+[Unit]
+Description=Check_MK Agent
+After=network.target
+
+[Service]
+ExecStart=-/usr/local/bin/check_mk_agent
+StandardInput=socket
+
